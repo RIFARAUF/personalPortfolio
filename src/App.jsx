@@ -1,18 +1,18 @@
 import React from 'react';
-import header from './components/header/header';
-import about_me_section from './components/about_me_section/about_me_section';
-import projects_section from './components/projects_section/projects_section';
-import footer from './components/footer/footer';
-
-
+import Header from './components/header';
+import About_me_section from './components/about_me_section';
+import Projects_section from './components/projects_section';
+import Footer from './components/footer';
 
 function App() {
   return (
     <div>
-      {header()}
-      {about_me_section()}
-      {projects_section()}
-      {footer()}  
+      <Header />
+      <main>
+        <About_me_section />
+        <Projects_section />
+      </main>
+      <Footer />
     </div>
   );
 }
